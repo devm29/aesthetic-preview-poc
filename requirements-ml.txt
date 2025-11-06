@@ -1,0 +1,23 @@
+# Optional heavy ML dependencies for generative editing (SDXL inpainting)
+torch
+diffusers
+transformers
+accelerate
+safetensors
+
+# Optional ML dependencies for generative editing (SDXL inpainting)
+# Install with: pip install -r requirements-ml.txt
+# Notes:
+# - On Apple Silicon, PyTorch uses MPS by default (no CUDA). Wheels are large; first install may take time.
+# - Keep your base requirements.txt as-is; these are additive and optional.
+
+# Core
+torch==2.3.1
+transformers==4.44.2
+accelerate==0.33.0
+safetensors==0.4.3
+# Diffusers (SDXL inpainting)
+diffusers==0.30.3
+# Optional image utils
+scipy==1.11.4
+# (InstantID/IP-Adapter can be added later if you choose to enable identity adapters)
